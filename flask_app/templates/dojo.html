@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojos</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="m_container test">
+        <div class="dojoleft box test">
+            <h1>New Dojo</h1>
+            <form action="/process/dojo" method="post">
+                <div class="dojo_form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name">
+                    <button class="submit">Create</button>
+                </div>
+            </form>
+        </div>
+        <!-- ---------2nd----- -->
+        <div class="dojoright box test">
+            <div class="dojo_display">
+                <tr>
+                    {% for names in dojos %}
+                    <td><a href="/dojo_show/{{names.id}}">{{names.name}}</a></td>
+                    {% endfor %}
+                </tr>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href='/ninja/new''>New Ninja Sign Up</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.test {
+border: 1px;
+border-color: blue;
+border-style: solid;
+}
+
+footer{
+    text-align: center;
+    font-size: 30px;
+}
+
+.m_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dojoBox h1 {
+    text-align: center;
+}
+
+.dojoleft {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    background-image: linear-gradient(seagreen,whitesmoke);
+    height: 200px;
+    width: 400px;
+}
+.dojoright {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    background-image: linear-gradient(teal ,whitesmoke);
+    height: 600px;
+    width: 400px;
+}
+
+.dojo_form {
+    height: 30px;
+}
+
+.dojo_display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* -------------ninja css--------------- */
+
+.ninjaBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    background-image: linear-gradient(rgb(59, 183, 224),whitesmoke);
+}
+
+.ninjaBox form {
+    margin-top: 15px;
+}
+
+
+select {
+    width: 174px;
+}
+
+.addNinja button {
+    width: 120px;
+    position: relative;
+    left: 75px;
+    
+}
